@@ -54,11 +54,13 @@
 	</style>
 </head>
 <body>
-    <form action="/atm/changepin" method="post">
+    <form action="/atm/generatepin" method="post">
+		Enter Account Number:
+		<input type="text" name="accno" id="accno"><br><br>
+
         Enter New PIN: 
-        <input type="number" ><br><br>
-        Re-Enter PIN :
-        <input type="number" name="Enter PIN" min="1000" max="9999"><br><br>
+        <input type="text" name="newpin" id="newpin"><br><br>
+       
         <button type="submit">SET PIN</button>
     </form>
 </body>

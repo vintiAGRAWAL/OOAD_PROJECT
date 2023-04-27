@@ -6,4 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 // @Repository
 public interface InventoryRepo extends JpaRepository<Inventory, Long> {
+    Inventory findByPin(String pin);
+
+    Inventory findByAccno(String accno);
 }
