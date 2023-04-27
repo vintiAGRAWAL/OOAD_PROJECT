@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Your Account details</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container mt-5">
+  <h2 class="text-center">User Details</h2>
+  <table class="table table-striped mt-4">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Account Balance</th>
+      <th>Account Number</th>
+      <th>Account Type</th>
+      <th>ATM PIN</th>
+      <th>Card Number</th>
+      <th>Username</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr th:each="accountInfo : ${inventory}">
+        <td th:text="${accountInfo.id}"></td>
+        <td th:text="${accountInfo.accbal}"></td>
+        <td th:text="${accountInfo.accno}"></td>
+        <td th:text="${accountInfo.acctype}"></td>
+        <td th:text="${accountInfo.atmpin}"></td>
+        <td th:text="${accountInfo.cardno}"></td>
+        <td th:text="${accountInfo.username}"></td>
+       
+      
+       </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+    

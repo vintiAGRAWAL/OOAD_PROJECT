@@ -1,0 +1,97 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <style>
+            .dropbtn {
+              background-color: #04AA6D;
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+            }
+            
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            .dropdown-content a:hover {background-color: #ddd;}
+            
+            .dropdown:hover .dropdown-content {display: block;}
+            
+            .dropdown:hover .dropbtn {background-color: #3e8e41;}
+            </style>
+             <meta charset="UTF-8">
+             <title>Add Item</title>
+             <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <form  align="center">
+          
+            <div class="dropdown">
+                <button class="dropbtn">Make Transactions</button>
+                <div class="dropdown-content">
+                <a href="withdrawl">Withdraw</a>
+                <!-- <a href="Deposit">Deposit</a> -->
+                <a href="transfer">Transfer Funds</a>
+            </div>
+          </div>
+             <br><br>
+             <div class="dropdown">
+              
+             <button class="dropbtn">PIN </button></a>
+              <!-- <button class="dropbtn">Change PIN</button> -->
+             
+              <div class="dropdown-content">
+                <a href="changepin">Change PIN </a>
+                <a href = "generatepin">Generate PIN</a>
+           
+          </div>  
+        </div>
+            <br><br>
+              <!-- <button class="dropbtn" >Generate PIN</button><br><br> -->
+              <div class="dropdown">
+            <button class="dropbtn">Display</button></a>
+            <div class="dropdown-content">
+
+             <a  href="list">Display</a>
+         
+             </div>
+             </div>
+             <div class="dropdown">
+              <button class="dropbtn">Add</button></a>
+              <div class="dropdown-content">
+  
+               <a  href="addInventory">Add</a>
+           
+               </div>
+               </div>
+
+           
+             
+
+            
+            
+                       
+        </form>
+    </body>
+</html> 

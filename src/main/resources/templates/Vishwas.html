@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="add" th:object=${inventory} method="POST">
+        <label for="accno">Enter account No.</label>
+        <input class="accno" id="accno" name="accno" field="*{accno}">
+        <label for="accbal">Enter account balance.</label>
+        <input class="accbal" id="accbal" name="accbal" field="*{accbal}">
+        <label for="acctype">Enter account type</label>
+        <input class="acctype" id="acctype" name="acctype" field="*{acctype}">
+        <label for="atmpin">Enter atm pin.</label>
+        <input class="atmpin" id="atmpin" name="atmpin" field="*{atmpin}"> 
+        <label for="cardno">Enter card No.</label>
+        <input class="cardno" id="cardno" name="cardno" field="*{cardno}">
+        <label for="username">Enter Username.</label>
+        <input class="username" id="username" name="username" field="*{username}">
+        <button type="submit">Submit</button>
+    </form>>
+</body>
+</html>

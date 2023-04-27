@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Item</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container mt-5">
+  <h2 class="text-center">Add New Item</h2>
+  <form th:action="@{/inventory/add}" th:object="${inventory}" method="post" class="mt-4">
+    <div class="form-group">
+        <label for="pid">Product ID:</label>
+        <input type="text" class="form-control" id="productid" placeholder="Enter Product ID" th:field="*{productid}" required>
+      </div>
+    <div class="form-group">
+      <label for="pname">Product Name:</label>
+      <input type="text" class="form-control" id="productname" placeholder="Enter Product Name" th:field="*{productname}" required>
+    </div>
+    <div class="form-group">
+      <label for="price">Price:</label>
+      <input type="text" class="form-control" id="price" placeholder="Enter Product Price" th:field="*{price}" required>
+    </div>
+    <div class="form-group">
+      <label for="qty">Quantity:</label>
+      <input type="text" class="form-control" id="qty" placeholder="Enter Product Quantity" th:field="*{qty}" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</body>
+</html>
