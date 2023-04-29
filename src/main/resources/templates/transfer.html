@@ -52,11 +52,13 @@
 	</style>
 </head>
 <body>
-	<form action="/atm/withdrawl" method = "post">
+	<form action="/atm/transfer" method = "post">
         Enter Amount to Tranfer: 
         <input type="number" name="amount" value="amount"><br><br>
-        Enter Account Number: 
-        <input type="number" ><br><br>
+		Enter Your Account Number : 
+		<input type="text" name="sourceAccno" value="sourceAccno" id="sourceAccno"><br><br>
+        Enter Account Number To Transfer: 
+        <input type="text" name="destAccno" value="destAccno" id="destAccno"><br><br>
         Enter PIN :
         <input type="number" name="pin" min="1000" max="9999"><br><br>
         <button type="submit">MAKE TRANSACTION</button>
